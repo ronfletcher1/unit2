@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Places to visit in Georgia</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        /* div (with no . and no #) targets a tag*/
+        /* # will target an id
+        . will target a class*/
+        /* div{ targets all (div's)*/
+        #gallery-wrapper{
+            border: green 2px dashed;
+            text-align: center
+        }
+        #top-section{
+            border: 2px solid blue
+        }
+        #middle-section{
+            border: 3px orange dashed
+        }
+        #bottom-section{
+            border: solid pink 2px
+        }
+        /* .thumb{ */
+            /* width: 15% */
+        
+        img{
+            width: 1000px
+        }
+    </style>
+</head>
+<body>
+    <!-- A wrapper for the entire gallery. The div 
+    does nothing other than help us organize our content -->
+   <div id="gallery-wrapper">
+       <div id="top-section">
+           <h1>A photo gallery made with CSS, HTML, a tiny bit of JS, and a whole lotta love</h1>
+       </div>
+       
+       <!-- an id is unique on a page -->
+       <!-- an id is like a serial number -->
+       <div id="middle-section">
+           <!-- a class is not unique, but groups things -->
+           <!-- a upc -->
+            <img class="thumb" src="./arabia_mnt.jpg" onclick="bigImage.src = this.src"/>
+            <img class="thumb" src="./callaway_gardens.jpg" onclick="bigImage.src = this.src"/>
+            <img class="thumb" src="./Etowah_Indian_Mounds.jpg" onmouseover="bigImage.src = this.src"/>
+            <img class="thumb" src="./prov_state_canyon.jpg" onmouseover="bigImage.src = this.src"/>
+            <img class="thumb" src="./wormsloe.jpg" onclick="bigImage.src = this.src"/>
+           
+       </div>
+    
+        <div id="bottom-section">
+                <img src="./prov_state_canyon.jpg" name="bigImage" />
+        </div>
+
+   </div>
+</body>
+</html>
