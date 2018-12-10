@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- <link rel="stylesheet" type="text/css" media="screen" href="main.css" />  -->
+    
+    <script type="text/javascript">
+        console.log("Sanity Check")
+        // document.getElementById('roll-button').addEventListener(click, function ()[
+                // ***replaced with line button tag
+        // ])
+        function roll(){
+            // console.log('User rolled")
+            // Everything belowngs to the window.
+            // you don't ever have to use window. because 
+            // console.log(window)
+            // is the same as...
+            // alert("I'm an alert box!")
+            // console.log(window.document);
+            // .log on an html "thing" will show you html.
+            // .dir on an html "thing" will show you the JS object
+            // console.log(document);
+            // console.dir(document);
+            // console.dir(document.doctype);
+            // console.dir(document.body);
+
+
+            //get a random number between 1 and 6
+            var rand1 = Math.ceil(Math.random() * 6);
+            var rand2 = Math.ceil(Math.random() * 6);
+            // console.log(rand1);
+
+            // the dice images are dN.gif we hav 2 random numbers for the N
+            // First...get the dice html
+            var dice = document.getElementById('dice');
+            // var dice = document.querySelector('#dice');
+            console.dir(dice)
+            var die1 = dice.children[0];
+            var die2 = dice.children[1];
+            die1.src = `./d${rand1}.gif`;
+            die2.src = `./d${rand2}.gif`;
+
+            if (rand1 + rand2 > 8){
+                console.log("You won");
+                var dragonDiv = document.getElementById('dragon')
+                dragonDiv.children[0].src="./slaindragon.jpeg";
+            } else{
+                console.log("You lost");
+            }
+
+
+        }
+    </script>
+</head>
+<body>
+    
+    <div id="game-wrapper">
+        <div id="dragon">
+            <img src="./dragon.png">
+        </div>
+
+        <div id"message">
+            <p>You have encounteres the terribl, terrible dragon.  Roll to fight.
+                8 or higher defeats it, 7 or lower and you're toast.</p>
+        </div>
+        <div id="dice">
+            <img src="./d1.gif" alt="">
+            <img src="./d1.gif" alt="">
+        </div>
+
+        <div id="roll">
+            <button id="roll-button" onclick="roll()">Fight!!!</button>
+        </div>
+
+    </div>
+</body>
+</html>
