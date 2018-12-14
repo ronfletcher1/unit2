@@ -1,0 +1,39 @@
+body{
+    background-color: orange;
+}
+
+#board{
+    max-width: 640px;
+    min-width: 320px;
+    margin: auto;
+}
+
+.square{
+    background-color: #fff;
+    border: 2px solid #000;
+    width: 185px;
+    height: 185px;
+    outline: none; /* remove the blue line from clicking our squares */
+    font-size: 60px;
+}
+
+
+.square:hover{
+    background-color: aquamarine;
+}
+
+#message{
+    text-align: center;
+    font-size: 40px;
+    color: greenyellow;
+}
+
+.winning-square{
+    background-color: green
+}
+
+#reset{
+    text-align: left;
+    font-size: 40px;
+    color: red;
+}
