@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <style>
+        .ball{
+            height: 100px;
+            width: 100px;
+            border: 2px solid black;
+            background-color: blue;
+            color: white;
+            /* transition - will make the browser apply a transition
+            from 1css rule to another over a period of time*/
+            /* you must be going from A ---> B to apply a transition*/
+            /* transition takes 2 args:
+            1. which css rules apply 
+            2. how long to get there*/
+            transition: all 2s;
+        }
+        .ball:hover{
+            border-radius: 50%;
+            background-color: red;
+            margin-left: 500px;
+            display: inline-block;
+            transform: rotate(1360deg);
+        }
+        .ball.ease{
+            /* a 3rd aarg for transition, is how the accel is applied */
+            transition: all 2s ease-in;
+        }
+        .ball.ease-out{
+            transition: all 2s ease-out;
+        }
+        .ball.what-the{
+            transition-timing-function: cubic-bezier(1, .03, 0, -1.04);
+        }
+        .square{
+            height: 200px;
+            width: 200px;
+            background-color: orange;
+            border: 5px solid black;
+            margin-bottom: 10px;
+            /* transform property allows you to apply cool
+            transformations of any element that is otherwise 
+            just a rect */
+            /* 1. rotate
+            2. scale
+            3. skew
+            4. translats */
+            transition: all 2s;
+        }
+        .square:hover{
+            transform: rotate(0deg) !important;
+        }
+        .square.rotate{
+            /* rotate takes, in degrees, how much to rotate */
+            /* transform: rotate(45deg); */
+            /* transform: rotatex(45deg); */
+            /* transform: rotateY(45deg); */
+            transform: rotateZ(45deg);
+        }
+        .square.scale{
+            /* scale takes in % how large or small to make 
+            an element relative to is's base size */
+            transform: scale(2);
+            transform: scale(.2);
+            transform: scaleY(2);
+        }
+        .square.skew{
+            transform: skew(45deg)
+        }
+        .square.translate{
+            transform: translate(200px,100px);
+        }
+    </style>
+
+</head>
+<body>
+
+    <div class="ball">Spinning Ball</div>
+    <div class="ball ease">Spinning Ball</div>
+    <div class="ball ease-out">Spinning Ball</div>
+    <div class="ball what-the">Spinning Ball</div>
+
+    <div class="square rotate">Rotate</div>
+    <div class="square scale">scale</div>
+    <div class="square skew">skew</div>
+    <div class="square translate">translate</div>
+    
+
+</body>
+</html>
