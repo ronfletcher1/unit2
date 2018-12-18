@@ -3,13 +3,13 @@ body{
     background: url("frosty.jpeg");
     
     background-size: cover;
-    color: green;
+    color: red;
     height: 100vh;
     text-align: center;
 }
 
 .h1{
-    font-size: 40px;
+    font-size: 60px;
     margin: 40px 0px 0px;
 }
 
@@ -19,5 +19,10 @@ body{
     background-color: white;
     border-radius: 5px;
     border: 1px solid green
+
+}
+
+.newBackground{
+    background: url("newyear.jpeg");
 
 }
