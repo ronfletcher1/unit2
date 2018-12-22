@@ -22,47 +22,138 @@ tests in any environment you like: https://cdn.freecodecamp.org/testable-project
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Page Title</title>
+    <title>Katzen</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
-    <script src="main.js"></script>
+    <!-- <script src="main.js"></script> -->
 </head>
 
 <style>
-/* #image {
+body {
+    background-image: url("chseagle.png");  
+    font-family:"Trebuchet MS", Helvetica, sans-serif;
+    text-align:center;
+    min-width:260px;
+    
+}
 
+#main {
+    margin:30px auto;
+    padding:15px;
+    border:0px solid;
+    border-radius:5px;
+    background:#eee;
+}
+
+#title {
+    position: static;
+    top: 120px;
+}
+#img-div {
+    margin:-5px;
+    margin-top:20px;
+    width:100%;
+    border:5px solid white;
+    background:white;
+}
+
+#image {
+    max-width: 100%; 
+    display: block; 
+    height: auto;
+    margin: auto;
+}
+/* 
+.banner_holder img{
+    width: 100%;
+}  */
+
+/* html,body{
+  font-family:"Trebuchet MS", Helvetica, sans-serif;
+  text-align:center;
+  min-width:260px;
+  color:#333;
+}
+#main{
+  margin:30px auto;
+  padding:15px;
+  border:0px solid;
+  border-radius:5px;
+  background:#eee;
+}
+img{
+  max-width: 100%; 
+  display: block; 
+  height: auto;
+  margin: auto;
+}
+#img-div{
+  margin:-5px;
+  margin-top:20px;
+  width:100%;
+  border:5px solid white;
+  background:white;
+}
+#img-caption{
+  margin:15px;
+}
+#headline{
+  margin-top:50px;
+  text-align:left;
 } */
+    
 </style>
 
 <body>
+    <!-- <img class="background" src="./race-2090184_960_720.png"> -->
     <!-- User Story #1: My tribute page should have an element with a corresponding id="main", 
     which contains all other elements. -->
     <div id="main">
         <!-- User Story #2: I should see an element with a corresponding id="title", which 
-        contains a string (i.e. text) that describes the subject of the tribute page (e.g. "Dr. Norman Borlaug"). -->
-        <div id="title">Ken Katzen - CHS 1st 2X State Champion Coach (Cross Country, 1978 & 1980)</div>
+        contains a string (i.e. text) that describes the subject of the tribute page (e.g. "Dr. Norman 
+        Borlaug"). -->
+        <h1 id="title">Ken Katzen</h1>
+        <div>The COACH, The ARTIST!!!</div>
         <!-- User Story #3: I should see a div element with a corresponding id="img-div". -->
         <div id="img-div">
-            <!-- User Story #4: Within the img-div element, I should see an img element with a corresponding id="image". -->
+            <!-- User Story #4: Within the img-div element, I should see an img element with a 
+                corresponding id="image". -->
             <!-- User Story #8: The img element should responsively resize, relative to the width of its parent 
             element, without exceeding its original size.
             User Story #9: The img element should be centered within its parent element. -->
-            <img id="image" src="../freecodecamp/crosscountry.jpeg" alt="Cross Country Photo">
-            <!-- User Story #5: Within the img-div element, I should see an element with a 
-            corresponding id="img-caption" that contains textual content describing the image shown in img-div. -->
-            <div d="img-caption">Y
+            <div class="image-cap">
+                <img id="image" src=".//katzen.jpeg" alt="Ken Katzen">
+                <!-- <img id="image" src="./crosscountry.jpeg" alt="Cross Country Photo"> -->
+        
+                <!-- User Story #5: Within the img-div element, I should see an element with a 
+                corresponding id="img-caption" that contains textual content describing the image shown in img-div. -->
+                <div id="img-caption">Ken Katzen - Self Portrait</div>
+            </div> <br>
+        
+            <!-- User Story #6: I should see an element with a corresponding id="tribute-info", which contains 
+            textual content describing the subject of the tribute page. -->
+            <div id="tribute-info">Ken Katzen was the head couch of the Centennial High School Cross Country team
+                from the schools openeing in 1977 to 1980.During his tenure he became the schools first 
+                MPSSAA State Cross Country Champion in 1978.  Coach Katzen followed up his victory again in 
+                1980 to become the schools first two time state champion coach. My most memorable moments of 
+                cach Katzen are the 24 hour cross country marathon dedication to CHS's first beloved 
+                principal <a href="https://www.newspapers.com/clip/21646658/the_baltimore_sun/">Angelo J. Fortunato</a>  
+                , 6:30 AM morning practices, consequences of actions, goal setting, and sports psychology!!<br>
+                <br>It wasn't until I was researching the MPSSA Fall Sports Record Book that I found out that 
+                my coach has a deep passion for art.  When I searched for him on google, his art was at the top 
+                of the search results.  All I can say is "WOW"!!! <br>     
             </div>
-        </div>
-        <!-- User Story #6: I should see an element with a corresponding id="tribute-info", which contains 
-        textual content describing the subject of the tribute page. -->
-        <div id="tribute-info">EAR...CLASS...CHAMPION...COACH...FINALIST..COACH <br>
-            1978...C...Centennial...82...Ken Katzen...Boonsboro...60...Dwight Scott<br>
-            1980...B...Centennial...60...Ken Katzen...Fallston...90...Tony Sarcone
-        </div>
+
+        </div><br>
+
         <!-- User Story #7: I should see an a element with a corresponding id="tribute-link", which links 
         to an outside site that contains additional information about the subject of the tribute page. -->
-        <a id="tribute-link" href=""></a>
-    
+        <div>
+            <a id="tribute-link" target="_blank" 
+            href="http://www.mpssaa.org/assets/publications/FallRecordBook.pdf">Ken Katzen - The Coach</a><br>
+            <br><a id="tribute-link" target="_blank" 
+            href="https://bakerartist.org/portfolios/ken-katzen">Ken Katzen - The Artist</a>
+        </div>           
     </div>        
 </body>
 </html>
