@@ -2,16 +2,14 @@
 // if., javascript wait until the DOM is finished loading
 // before running anything
 $(document).ready(()=>{
-    $('button.diffLevel').click(function(){
+    $('button').click(function(){
         // console.log($(this));
         // attr method, will get the value of that attribute
         let gridSize = $(this).attr('diff');
-        let waitTime = 2000
-        // if 
         console.log(gridSize);
         let cards = []
-        // our images start at 1. So start i at 1
-        // every time through the loop, we push 2 images
+        // our monsters start at 1. So start i at 1
+        // every time through the loop, we pus 2 monsters
         // on because this is a matching game, we need 2
         // so we loop half of the grid size (gridSize/2), but
         // we need to add 1, because we started at 1, not 0
@@ -39,7 +37,7 @@ $(document).ready(()=>{
             </div>
            `
         });
-        // console.log(memoryHTML);
+        console.log(memoryHTML);
         // sorry, Jonathan... Rob will teach them a better way later!!!
         $('.memory-game').html(memoryHTML);
 
@@ -57,22 +55,6 @@ $(document).ready(()=>{
                     // remove flip
                     cardsUp.removeClass('flip')
                     cardsUp.addClass('matched')
-                // console.log($('.card-holder'))
-                let cardHolders = $('.card-holder')
-                console.log($('.matched').length)
-                if($('.matched').length >= gridSize){
-                    // do something
-                    console.log('winner',$('.matched').length, gridSize )
-                    $('.memory-game').html('Winner winner chicken dinner')
-                }
-                let numMatched = 0;
-                for(let i = 0; i < cardHolders.length; i++){
-               
-                    if(numMatched === cardHolders.length){
-                        console.log("winner")
-                        
-                    }  
-                }
                 }else{
                     // these are not a match because the HTML is different
                     // JS is too dang fast. We have to let the user 
