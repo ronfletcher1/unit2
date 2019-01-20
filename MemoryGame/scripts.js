@@ -3,7 +3,7 @@
 // before running anything
 
 
-let playGame = () => {$('.row').html(`
+let playGame = ()=>{$('.row').html(`
 <div class="col-sm-12 text-center memory-game">
     <h1>Difficulty Level?</h1>
     <button diff=4 class="btn btn-lg btn-success diffLevel">EASY</button>
@@ -30,8 +30,8 @@ $('button.diffLevel').click(function(){
         if(i<10){
             kamalaNumber = "0"+i;
         }
-        cards.push(`<img class="kam" src="./images/kamala-${kamalaNumber}.jpeg"/>`);
-        cards.push(`<img class="kam" src="./images/kamala-${kamalaNumber}.jpeg"/>`);
+        cards.push(`<img class="kam img-responsive" src="./images/kamala-${kamalaNumber}.jpeg"/>`);
+        cards.push(`<img class="kam img-responsive" src="./images/kamala-${kamalaNumber}.jpeg"/>`);
     };
     cards = shuffleDeck(cards);
     // console.log(cards)
@@ -40,10 +40,10 @@ $('button.diffLevel').click(function(){
     // loop through all the carsd
     cards.forEach((card)=>{
         memoryHTML += `
-        <div class="card col-sm-3">
-            <div class="card-holder">
-                <div class="card-front">${card}</div>
-                <div class="card-back"></div>
+        <div class="card col-sm-3 img-responsive">
+            <div class="card-holder img-responsive">
+                <div class="card-front img-responsive">${card}</div>
+                <div class="card-back img-responsive"></div>
             </div>
         </div>
        `
@@ -71,15 +71,15 @@ $('button.diffLevel').click(function(){
             console.log($('.matched').length)
             if($('.matched').length >= gridSize){
                 // do something
-                console.log('winner',$('.matched').length, gridSize )
-                $('.memory-game').html('Winner winner chicken dinner')
+                console.log('winner',$('.matched').length, gridSize)
+                
             }
             let numMatched = 0;
             for(let i = 0; i < cardHolders.length; i++){
            
                 if(numMatched === cardHolders.length){
                     console.log("winner")
-                    
+                    $('.memory-game').html('Winner winner chicken dinner')
                 }  
             }
             }else{

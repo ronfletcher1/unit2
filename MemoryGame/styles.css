@@ -52,7 +52,7 @@ img{
 
 .card-back{
 	/* we are inside of css, go up one with ../ then down into images to get bw */
-	background: url('images/logo-bw.png') no-repeat 50% 50%;	
+	background: url('images/whitehouse.jpeg') no-repeat 50% 50%;	
 	height: 23vw;
 	width: 100%;
 }
