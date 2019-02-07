@@ -1,0 +1,122 @@
+.category {
+    /* width: 0%; */
+    /* background-image: url(./Blog_SDL_EN.png);  */
+    background-repeat: no-repeat;
+    /* background-size: auto; */
+    width: 750px;
+    height: 800px;
+    /* left: 400px;
+    top: 400px; */
+    margin: 0;
+    position: relative;
+    left: 310px
+
+}
+.card {
+    position: absolute;
+    top: 700px;
+    left: 400px;
+    
+
+}
+
+img {
+    position: absolute;
+    top: 220px;
+    left: 445px
+}
+
+/* .rounded-circle {
+    width: 225px;
+    height: 225px;
+    left: 235px;
+    top: 222px
+} */
+
+.sdlc1 {
+    position: absolute;
+    left: 63px;
+    top: 35px;
+    /* transition: 3s; */
+}
+
+.sdlc1:hover {
+    width: 300px;
+    height: 300px;
+    z-index: 3;
+    transition-timing-function: ease-in-out;
+}
+
+.sdlc2 {
+    position: absolute;
+    left: 340px;
+    top: 35px;
+    /* transition: 3s; */
+}
+
+.sdlc2:hover {
+    width: 300px;
+    height: 300px;
+    z-index: 3;
+    transition-timing-function: ease-in-out;
+}
+
+.sdlc3 {
+    -ms-transform: rotate(0deg); /* IE 9 */
+    -webkit-transform: rotate(0deg); /* Safari */
+    transform: rotate(0deg);
+    position: absolute;
+    left: 470px;
+    top: 200px;
+    /* transition: 3s; */
+}
+
+.sdlc3:hover {
+    width: 300px;
+    height: 300px;
+    z-index: 3;
+    transition-timing-function: ease-in-out;
+}
+
+.sdlc4 {
+    position: absolute;
+    left: 285px;
+    top: 430px;
+    /* transition: 3s; */
+}
+
+.sdlc4:hover {
+    width: 300px;
+    height: 300px;
+    z-index: 3;
+    transition-timing-function: ease-in-out;
+}
+
+.sdlc5 {
+    position: absolute;
+    left: 60px;
+    top: 420px;
+    /* transition: 3s; */
+}
+
+.sdlc5:hover {
+    width: 300px;
+    height: 300px;
+    z-index: 3;
+    transition-timing-function: ease-in-out;
+}
+
+.sdlc6 {
+    position: absolute;
+    left: 15px;
+    top: 190px;
+    transition-timing-function: ease-in-out;
+}
+
+.sdlc6:hover {
+    width: 300px;
+    height: 300px;
+    z-index: 3;
+    /* transition-timing-function: ease-in-out; */
+}
+
